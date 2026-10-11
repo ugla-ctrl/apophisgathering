@@ -296,7 +296,10 @@ img, video { max-width: 100%; }
 <main id="top">
   <section class="hero" aria-labelledby="h1">
     <img class="bg still" src="img/hero-pass.jpg" alt="">
-    <video class="bg" id="hero-vid" src="img/hero-pass.mp4" poster="img/hero-pass.jpg" autoplay muted loop playsinline preload="auto" aria-hidden="true"></video>
+    <video class="bg" id="hero-vid" poster="img/hero-pass.jpg" autoplay muted loop playsinline preload="auto" aria-hidden="true">
+      <source src="img/hero-pass-mobile.mp4" media="(max-width: 700px)">
+      <source src="img/hero-pass.mp4">
+    </video>
     <div class="grid"></div>
     <div class="shade"></div>
     <div class="shell">
